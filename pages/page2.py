@@ -34,11 +34,11 @@ with st.form(key="profile_form"):
                 else:
                         st.text(f"あなたの年齢層:{age_category}")
         
-                st.text(f"あなたの趣味:{", ".join(hobby)}か。いいね")
+                st.text(f"あなたの趣味:{', '.join(hobby)}。いいですね")
                 if height > 170:
-                        st.text(f"身長は{height}か、平均より高いじゃないか")
+                        st.text(f"身長は{height}か、平均より高いですね")
                 else:
-                        st.text(f"身長は{height}か、これからに期待だな")
+                        st.text(f"身長は{height}か、これからに期待です")
 
         elif cancel_btn:
                 st.warning("フォームがキャンセルされました")
